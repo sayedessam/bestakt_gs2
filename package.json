@@ -1,0 +1,21 @@
+{
+  "name": "bestakt_gs2",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/transformer-remark": "^0.4.0",
+    "@gridsome/vue-remark": "^0.1.9",
+    "chart.js": "^2.9.3",
+    "gridsome": "^0.7.12",
+    "gridsome-remark-katex": "^0.1.1",
+    "remark-grid-tables": "^1.7.1",
+    "vue-chartjs": "^3.5.0",
+    "vue-katex": "^0.3.0",
+    "vue-latex": "0.0.1",
+    "vuetify": "^2.2.11"
+  }
+}
