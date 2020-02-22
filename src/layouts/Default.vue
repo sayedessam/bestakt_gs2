@@ -14,18 +14,23 @@
     
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn icon to="/login">
-         <v-icon color="primary" >mdi-account-box</v-icon>
+      <v-btn to="/login" color="white" class="mx-2"
+      rounded 
+      outlined
+      width="100"
+      style="font-size: 20px; font-weight: bolder; background-color: red;">
+         <v-icon left>mdi-sale</v-icon>خصم
       </v-btn>
-      <v-btn icon to="/kpis">
-         <v-icon color="primary" >mdi-speedometer</v-icon>
-      </v-btn>
+      
       <v-btn icon @click="drawer = !drawer">
          <v-icon color="primary" >mdi-menu</v-icon>
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
-  <LogoComplete />
+  <transition name="fade">
+    <LogoComplete />
+  </transition>
+  
   
   <!-- side menu -->
      <v-navigation-drawer 
@@ -78,9 +83,9 @@
     </v-navigation-drawer>
 
 
-    <v-container>
+    
       <slot/>
-    </v-container>
+   
 
   </v-app>
 </template>
@@ -155,4 +160,13 @@ export default {
     
     font-family: 'Cairo', sans-serif;
   }
+
+.slide-fade-enter-active {
+  transition: all .9s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 </style>
