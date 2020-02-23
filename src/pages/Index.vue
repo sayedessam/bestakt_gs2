@@ -263,13 +263,14 @@
     <v-btn :to="i.node.path" color="primary">
       {{ i.node.title }}
     </v-btn>
-    
-
   </div>
+
   
   
-  <g-image alt="Example image" src="~/assets/img/Picture14.svg" height="100" width="200" />
+<!--   
+  <g-image alt="Example image" src="~/assets/img/Picture14.svg" height="100" width="200" /> -->
 </v-container>
+<Footer />
   </Layout>
 </template>
 
@@ -288,7 +289,7 @@ query {
 }
 </static-query>
 <script>
-import Ads from '~/components/Ads'
+import Footer from '~/components/Footer'
 export default {
   data() {
     return {
@@ -303,7 +304,7 @@ export default {
     }
   },
   components: {
-    Ads
+    Footer
   },
   metaInfo: {
     title: 'مصادر خارجية'

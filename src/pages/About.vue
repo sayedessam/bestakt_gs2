@@ -22,6 +22,15 @@
                 <li>{{ n }} </li>
               </ul>
               <br>
+              <span
+              v-for="(n,i) in icons" :key="i"
+              class="mx-1"
+              >
+                <v-icon color="purple">
+                  {{ n }}
+                </v-icon>
+              </span>
+              <br>
               <hr>
               <br>
                <h2 class="text-center primary--text">
@@ -45,18 +54,41 @@ export default {
   data() {
     return {
       items: [
+        'مؤشرات قياس أداء الشركة أو المشروع',
+        'الموازنات التقديرية',
         'المشتريات',
         'مراقبة المخزون',
         'إصدار فواتير العملاء',
-        'المحاسبة',
+        'المحاسبة بنظام المعايير الدولية وإمساك الدفاتر',
         'إدارة النقد والحسابات البنكية',
         'إصدار القوائم المالية',
         'التقارير الإدارية',
-        'الموازنات التقديرية',
-        'دراسات جدوى المشروعات',
-        'المرتبات',
-        'مؤشرات قياس الأداء',
+        'تقييم المخاطر وكيفية مواجهتها',
+        ' المرتبات وسجلات العاملين',
         'الإجراءات والسياسات'
+      ],
+      icons:
+      [
+        'mdi-briefcase-account',
+        'mdi-bugle',
+        'mdi-chart-bar',
+        'mdi-city-variant-outline',
+        'mdi-chart-bell-curve',
+        'mdi-chart-line',
+        'mdi-cart-plus',
+        'mdi-calendar-account',
+        'mdi-bookshelf',
+        'mdi-chart-bar',
+        'mdi-truck-fast',
+        'mdi-truck-outline',
+        'mdi-tablet-ipad',
+        'mdi-head-cog-outline',
+        'mdi-glasses',
+        'mdi-gauge',
+        'mdi-doctor',
+        'mdi-cancel',
+        'mdi-do-not-disturb',
+        'mdi-baby-face'
       ]
     }
   }
