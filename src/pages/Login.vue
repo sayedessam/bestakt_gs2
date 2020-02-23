@@ -27,6 +27,18 @@
         </v-col>
     </v-row>
 
+    <v-row>
+      <v-col cols="12" md="6">
+        <v-textarea
+          outlined
+          name="input-7-1"
+          label="إستفسارك"
+          
+          hint="كيفية توفير النقدية بإستمرار؟"
+        ></v-textarea>
+      </v-col>
+    </v-row>
+
     <v-row justilfy="center">
       <div class="my-2 mx-4">
         <v-btn depressed large color="secondary primary--text">سجل</v-btn>
@@ -46,7 +58,7 @@
   export default {
     data () {
       return {
-        title: 'تسجيل الدخول',
+        title: 'تسجيل إستشارة ',
         name: '',
         nameTitle: 'الإسم بالكامل',
         email: '',

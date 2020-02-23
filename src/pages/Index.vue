@@ -15,23 +15,29 @@
       style="background-color: rgba(0,0,0,.4);"
     >
       <v-col class="text-center" cols="12">
-        <h1 class="mb-5" >
+        <h1 class="mb-5" style=" position: relative; z-index: 99;">
       بست تاكت أفضل موقع إستعانة بمصادر خارجية فى المنطقة العربية    
         </h1>
-        <g-image alt="Example image" src="~/assets/img/cycles.png" style= "width:50%; margin-top: -7%;" />
+        <g-image alt="Example image" src="~/assets/img/cycles.png" style= "width:50%; max-width: 700px; margin-top: -4%; position: relative; z-index: 1;" />
         <h2 class="mb-9 subheading">
       الإحترافية - السرعة - الدقة - أسعار في المتناول     
           
           </h2>
-           <v-btn color="teal lighten-3 black--text" width="250px" 
-           style="font-size: 20px; font-weight: 800;"
-           large
-           rounded
-           elevation="3"
-           height="60"
+           <v-btn color="accent purple--text" width="280px" 
+            to="/login"
+            large
+            rounded
+            elevation="3"
+            height="60"
             >
-            <v-icon left>mdi-head-snowflake-outline</v-icon>
-            إستشارة مجانية
+            <v-icon left large class="ml-4"
+              
+            
+            >mdi-head-snowflake-outline</v-icon>
+            <span  style="font-size: 24px; font-weight: bolder;">
+                إستشارة مجانية
+            </span>
+            
           </v-btn>  
     <!-- style="font-size: 12px; font-weight: bold;" -->
        
@@ -136,14 +142,17 @@
           خصم 30% لمدة محدودة
         </h1>
       
-        <v-btn color="teal lighten-3 black--text" width="250px" 
-           style="font-size: 20px; font-weight: 800;"
+        <v-btn color="accent purple--text" width="250px" 
+           style="font-size: 24px; font-weight: bold;"
            large
            rounded
            elevation="3"
            height="60"
+           to="/login"
             >
-            <v-icon left>mdi-account-plus-outline</v-icon>
+            <v-icon left class="ml-4"
+              
+            >mdi-account-plus-outline</v-icon>
             إشترك الآن
           </v-btn> 
       </v-col>
@@ -294,12 +303,12 @@ export default {
   data() {
     return {
       services: [
-        {title: 'مؤشرات الآداء', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-chart-bar'},
-        {title: 'الإجراءات والسياسات', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-cogs'},
-        {title: 'المالية', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-notebook-multiple'},
-        {title: 'شئون العاملين', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-human-handsup'},
-        {title: 'التقارير الإدارية', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-file-document-outline'},
-        {title: 'سرية المعلومات', description: 'نحن ملتزمون بسرية معلومات عملائنا', icon: 'mdi-shield-lock-outline'},
+        {title: 'مؤشرات قياس الآداء', description: 'أحدث أساليب عرض وتحليل مؤشرات أداء الشركة بطريقة تفعالية تساعدك على إتخاذ قرارات سريعة والتركيز على إستغلال الفرص', icon: 'mdi-chart-bar'},
+        {title: 'الإجراءات والسياسات', description: 'نقدم إجراءات وسياسات غير ورقية لإحكام الرقابة وفى نفس الوقت تسهل من سير العمل', icon: 'mdi-cogs'},
+        {title: 'المالية', description: 'نطبق المعايير الدولية لإمساك الدفاتر والمحاسبة من خلال أحدث البرامج العالمية ومنا برنامج كويك بوكس أو لاين', icon: 'mdi-notebook-multiple'},
+        {title: 'شئون العاملين', description: 'يتم حفظ ملفات وسجلات العملين على سحابة إلكترونية آمنة بتقنية شركة جوجل العالمية ومن ثم إصدار المرتبات الشهرية ومتطلبات التأمينات الإجتماعية تحويل الرواتب على البنوك بشكل آلى', icon: 'mdi-human-handsup'},
+        {title: 'التقارير الإدارية', description: 'نقدم تقارير شهرية عن آداء الشركة يشرح الإيجابيات والسلبيات وكيفية تفاديها', icon: 'mdi-file-document-outline'},
+        {title: 'سرية المعلومات', description: 'نحن ملتزمون بسرية معلومات عملائنا وجميع المنتسبين يتعهدوا بسياسة سرية المعلومات من سجلات ومراسلات وجميع المستندات تحفظ على سحابة إلكترونية آمنة', icon: 'mdi-shield-lock-outline'},
       ]
     }
   },
