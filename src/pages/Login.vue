@@ -21,6 +21,15 @@
     <v-row>
       <v-col cols="12" sm="6" md="3">
        <v-text-field
+            :label="companyTitle"
+            outlined
+          ></v-text-field>
+        </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12" sm="6" md="3">
+       <v-text-field
             :label="emailTitle"
             outlined
           ></v-text-field>
@@ -62,7 +71,8 @@
         name: '',
         nameTitle: 'الإسم بالكامل',
         email: '',
-        emailTitle: 'البريد الإلكترونى'
+        emailTitle: 'البريد الإلكترونى',
+        companyTitle: 'إسم الشركة'
       
       }
     },
