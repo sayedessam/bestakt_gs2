@@ -158,7 +158,7 @@ export default {
 <style>
   * {
     
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
   }
 
 .slide-fade-enter-active {

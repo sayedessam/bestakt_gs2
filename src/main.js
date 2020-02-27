@@ -19,7 +19,7 @@ export default function (Vue, { appOptions, router, head, isClient }) {
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap&subset=arabic,latin-ext'
+      href: 'https://fonts.googleapis.com/css?family=Cairo:400,600|Tajawal:500,700&display=swap&subset=arabic'
     }
     )
   
