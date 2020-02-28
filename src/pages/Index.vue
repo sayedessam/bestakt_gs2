@@ -15,11 +15,11 @@
       style="background-color: rgba(0,0,0,.4);"
     >
       <v-col class="text-center" cols="12">
-        <h1 class="mb-5" style=" position: relative; z-index: 99;">
+        <h1 class="" style="position: relative; top: -70px; z-index: 99;">
       بست تاكت أفضل موقع إستعانة بمصادر خارجية فى المنطقة العربية    
         </h1>
-        <g-image alt="Example image" src="~/assets/img/cycles.png" style= "width:50%; max-width: 700px; margin-top: -4%; position: relative; z-index: 1;" />
-        <h2 class="mb-9 subheading">
+        <!-- <g-image alt="Example image" src="~/assets/img/cycles.png" style= "width:70%; max-width: 700px; margin-top: -15%; position: relative; z-index: 1;" /> -->
+        <h2 class="mt-12 pb-6 subheading">
       الإحترافية - السرعة - الدقة - أسعار في المتناول     
           
           </h2>
@@ -29,6 +29,7 @@
             rounded
             elevation="3"
             height="60"
+            class="mt-10"
             >
             <v-icon left large class="ml-4"
               
@@ -235,30 +236,22 @@
             hover
             
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
-                <v-card-title
+          <v-card-title
                   style="font-size: 26px; font-weight: bold;"
                   class="purple--text"
-                  v-text="n.title"
-                ></v-card-title>
+                  
+                >
+                <v-icon color="teal" style="font-size: 100px;" right>
+                  {{ n.icon }} </v-icon>
+                {{n.title}}
+          </v-card-title>
+          <v-card-text>
+            {{n.description}}
+          </v-card-text> 
 
-                <v-card-subtitle style="font-weight: bold;" v-text="n.description">
-                
-                </v-card-subtitle>
-              </div>
-
-              <v-avatar
-                class="ma-3"
-                size="150"
-                tile
-              >
-              <v-icon color="teal" style="font-size: 100px;">{{ n.icon }} </v-icon>
-              </v-avatar>
-            </div>
             <v-card-action>
 
-                  <v-btn color="purple white--text">إقرأ المزيد</v-btn>
+                  <v-btn color="purple white--text" to="/services">إقرأ المزيد</v-btn>
             </v-card-action>
         </v-card>
 
