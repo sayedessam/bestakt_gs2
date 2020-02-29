@@ -116,6 +116,7 @@ export default {
         'mdi-doctor',
         
         'mdi-do-not-disturb',
+        'mdi-account-tie',
         
       ]
     }

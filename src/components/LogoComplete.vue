@@ -26,6 +26,7 @@ export default {
     background-color:  #9b27af ;
     color: white;
     z-index: 899;
+    font-family: 'Cairo';
   }
 
   #logo {
@@ -44,6 +45,5 @@ export default {
     
     
   }
-</style>>
-  
 </style>
+  

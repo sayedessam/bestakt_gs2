@@ -236,7 +236,7 @@
             elevation="4"
             width="500"
             hover
-            min-height="300"
+            min-height="250"
             
           >
           <v-card-title
@@ -244,7 +244,7 @@
                   class="purple--text"
                   
                 >
-                <v-icon color="teal" style="font-size: 50px;" right>
+                <v-icon color="teal" style="font-size: 40px;" right>
                   {{ n.icon }} </v-icon>
                 {{n.title}}
           </v-card-title>
