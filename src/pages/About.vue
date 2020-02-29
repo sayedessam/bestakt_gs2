@@ -129,11 +129,11 @@ export default {
   }
 
   .services {
-    margin-right: 60px;
+    margin-right: 10px;
   }
 
   p, span, li {
-    font-size: 18px; 
+    font-size: 16px; 
     font-weight: bold;
   }
 

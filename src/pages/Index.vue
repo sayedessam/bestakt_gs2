@@ -7,18 +7,20 @@
     <v-parallax
     
     :src="require('~/assets/img/man-office.jpg')"
-    height="700"
+    height="600"
   >
     <v-row
       align="center"
       justify="center"
       style="background-color: rgba(0,0,0,.4);"
+      
     >
       <v-col class="text-center" cols="12">
-        <h1 class="" style="position: relative; top: -70px; z-index: 99;">
+        <h1 class="" style="position: relative; z-index: 99;">
       بست تاكت أفضل موقع إستعانة بمصادر خارجية فى المنطقة العربية    
         </h1>
         <!-- <g-image alt="Example image" src="~/assets/img/cycles.png" style= "width:70%; max-width: 700px; margin-top: -15%; position: relative; z-index: 1;" /> -->
+        <br><br><br>
         <h2 class="mt-12 pb-6 subheading">
       الإحترافية - السرعة - الدقة - أسعار في المتناول     
           
@@ -234,6 +236,7 @@
             elevation="4"
             width="500"
             hover
+            min-height="300"
             
           >
           <v-card-title
@@ -241,7 +244,7 @@
                   class="purple--text"
                   
                 >
-                <v-icon color="teal" style="font-size: 100px;" right>
+                <v-icon color="teal" style="font-size: 50px;" right>
                   {{ n.icon }} </v-icon>
                 {{n.title}}
           </v-card-title>
