@@ -252,9 +252,13 @@
             {{n.description}}
           </v-card-text> 
 
-            <v-card-action>
+            <v-card-action
+              style="position: absolute; bottom: 15px;"
+            >
 
-                  <v-btn color="purple white--text" to="/services">إقرأ المزيد</v-btn>
+                  <v-btn color="purple white--text" to="/services"
+                    
+                  >إقرأ المزيد</v-btn>
             </v-card-action>
         </v-card>
 
@@ -263,13 +267,19 @@
 </v-row>
 
 
+<div style="display: flex; align-items: center;
+  justify-content: space-around; ">
+  <h1>
+    موضوعات تهمك
 
-  <div v-for="i in $static.posts.edges" :key="i.node.id" style="font-size: 25px;">
+  </h1>
+  
+  <span v-for="i in $static.posts.edges" :key="i.node.id" style="font-size: 25px; ">
     <v-btn :to="i.node.path" color="primary">
       {{ i.node.title }}
     </v-btn>
-  </div>
-
+  </span>
+</div>
   
   
 <!--   
