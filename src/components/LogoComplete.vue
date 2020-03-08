@@ -42,7 +42,7 @@ export default {
     margin-right: 20px;
     line-height: 45px;
     vertical-align: top;
-    
+    font-family: 'Cairo';
     
   }
 </style>
