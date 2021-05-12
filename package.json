@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/transformer-remark": "^0.4.0",
     "@gridsome/vue-remark": "^0.1.9",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "gridsome": "^0.7.12",
     "gridsome-remark-katex": "^0.1.1",
     "remark-grid-tables": "^1.7.1",
